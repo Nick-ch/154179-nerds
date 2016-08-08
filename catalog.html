@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><a href="index.html"><img src="#" alt="Logo"></a></div>
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li>Магазин</li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="login"><a href="#">Корзина</a></div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="greetings">Добро пожаловать в магазин готовых макетов</div>
+        <div class="catalog_left_col">
+          <form action="#" method="get">
+            <h2>Стоимость:</h2>
+            <!-- пока не представляю как сделать ползунок цен -->
+            <p>От 0 до 15000</p>
+            <h2>Сетка:</h2>
+            <label class="filter_grid_type"><input type="radio" checked name="grid_type">Адаптивная</label>
+            <label class="filter_grid_type"><input type="radio" name="grid_type">Фиксированная</label>
+            <label class="filter_grid_type"><input type="radio" name="grid_type">Резиновая</label>
+            <h2>Особенности:</h2>
+            <label class="features"><input type="checkbox" checked name="filter_features">Слайдер</label>
+            <label class="features"><input type="checkbox" name="filter_features">Блок преимуществ</label>
+            <label class="features"><input type="checkbox" checked name="filter_features">Новости</label>
+            <label class="features"><input type="checkbox" name="filter_features">Галерея</label>
+            <label class="features"><input type="checkbox" name="filter_features">Корзина</label>
+            <button class="btn" type="submit">Показать</button>
+          </form>
+        </div>
+        <div class="catalog_right_col">
+          <div class="sorting">
+            <!-- Не знаю, как оформить сортировку -->
+            <span>Сортировать:</span>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По функционалу</a>
+          </div>
+          <div class="catalog_items">
+            <!-- На сколько помню по прошлому интенсиву, при наведении меняется отображение карточки товара. Кажется этого можно добится через :hover? -->
+            <div class="item_card"><a href="#"><img src="#" alt="Aviator"></a></div>
+            <!-- Насчет трех точек над фото не уверен - это через CSS делать нужно будет или просто вырезать с макета? -->
+            <div class="item_card"><a href="#"><img src="#" alt="Sunset"></a></div>
+            <div class="item_card"><a href="#"><img src="#" alt="Forte"></a></div>
+            <div class="item_card"><a href="#"><img src="#" alt="Modern Organic Thai"></a></div>
+            <div class="item_card"><a href="#"><img src="#" alt="Avenue"></a></div>
+            <div class="item_card"><a href="#"><img src="#" alt="Dovetail"></a></div>
+            <div class="item_card_hover">
+              <a href="#">
+                <h2>Aviator</h2>
+                <p></p>
+                <p class="btn_buy"></p>
+              </a>
+            </div>
+            <div class="item_card_hover">
+              <a href="#">
+                <h2>Sunset</h2>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <p class="btn_buy">10000 р.</p>
+              </a>
+            </div>
+            <div class="item_card_hover">
+              <a href="#">
+                <h2>Forte</h2>
+                <p></p>
+                <p class="btn_buy"></p>
+              </a>
+            </div>
+            <div class="item_card_hover">
+              <a href="#">
+                <h2>Modern Organic Thai</h2>
+                <p></p>
+                <p class="btn_buy"></p>
+              </a>
+            </div>
+            <div class="item_card_hover">
+              <a href="#">
+                <h2>Avenue</h2>
+                <p></p>
+                <p class="btn_buy"></p>
+              </a>
+            </div>
+            <div class="item_card_hover">
+              <a href="#">
+                <h2>Dovetail</h2>
+                <p></p>
+                <p class="btn_buy"></p>
+              </a>
+            </div>
+          </div>
+          <div class="catalog_pages">
+            <ul class="btn">
+              <li class="active_page">1</li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">Следующая</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="map">
+          <div class="contacts">
+            <h3>Nёrds design studio</h3>
+            <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#">Напишите нам</a>
+          </div>
+          <div class="pointer"><img src="#" alt="Pointer"></div>
+        </div>
+        <div class="social">
+          <a href="#">VK</a>
+          <a href="#">FB</a>
+          <a href="#">Inst</a>
+          <h1>Давайте дружить, это выгодно!</h1>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
