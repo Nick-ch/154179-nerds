@@ -21,6 +21,7 @@
     </header>
     <main>
       <div class="slider">
+        <!-- Пока не буду слайдер и приветствие перемещать в хедер. Мне удобнее, если хэдер одинаков на всех страницах. -->
         <div class="container">
           <input type="radio" id="btn-1" name="toggle" checked>
           <input type="radio" id="btn-2" name="toggle">
@@ -97,17 +98,23 @@
             <h3>Nёrds design studio</h3>
             <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a href="#">Напишите нам</a>
+            <a class="btn btn_write_to_us" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="footer_social">
-          <a href="#">VK</a>
-          <a href="#">FB</a>
-          <a href="#">Inst</a>
-          <h1>Давайте дружить, это выгодно!</h1>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+      <div class="footer_social">
+        <div class="container">
+          <div class="footer_social_btns">
+            <ul>
+              <li><a href="#">VK</a></li>
+              <li><a href="#">FB</a></li>
+              <li><a href="#">Inst</a></li>
+            </ul>
+          </div>
+          <div class="footer_social_slogan">
+            <h1>Давайте дружить, это выгодно!</h1>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </div>
       </div>
     </footer>

@@ -20,88 +20,125 @@
       </div>
     </header>
     <main>
+      <div class="greetings">
+        <!-- Пока не буду слайдер и приветствие перемещать в хедер. Мне удобнее, если хэдер одинаков на всех страницах. -->
+        <div class="container">Добро пожаловать в магазин готовых макетов</div>
+      </div>
       <div class="container">
-        <div class="greetings">Добро пожаловать в магазин готовых макетов</div>
         <div class="catalog_left_col">
           <form action="#" method="get">
-            <h2>Стоимость:</h2>
-            <!-- пока не представляю как сделать ползунок цен -->
-            <p>От 0 до 15000</p>
-            <h2>Сетка:</h2>
-            <label class="filter_grid_type"><input type="radio" checked name="grid_type">Адаптивная</label>
-            <label class="filter_grid_type"><input type="radio" name="grid_type">Фиксированная</label>
-            <label class="filter_grid_type"><input type="radio" name="grid_type">Резиновая</label>
-            <h2>Особенности:</h2>
-            <label class="filter_features"><input type="checkbox" checked name="features">Слайдер</label>
-            <label class="filter_features"><input type="checkbox" name="features">Блок преимуществ</label>
-            <label class="filter_features"><input type="checkbox" checked name="features">Новости</label>
-            <label class="filter_features"><input type="checkbox" name="features">Галерея</label>
-            <label class="filter_features"><input type="checkbox" name="features">Корзина</label>
-            <button class="btn" type="submit">Показать</button>
+            <div class="price_range">
+              <h2>Стоимость:</h2>
+              <div class="range_controls">
+                <div class="scale">
+                  <div style="width:75%;" class="bar"></div>
+                </div>
+                <div class="toggle min_toggle"></div>
+                <div class="toggle max_toggle"></div>
+              </div>
+              <div class="price_controls">
+                <label class="filter_price_range">От<input type="text" name="price_range_min" value="0"></label>
+                <label  class="filter_price_range">До<input type="text" name="price_range_max" value="15000"></label>
+              </div>
+            </div>
+            <fieldset class="filters_form_section">
+              <legend>Сетка:</legend>
+              <label class="filter_grid_type"><input type="radio" checked name="grid_type">Адаптивная</label>
+              <label class="filter_grid_type"><input type="radio" name="grid_type">Фиксированная</label>
+              <label class="filter_grid_type"><input type="radio" name="grid_type">Резиновая</label>
+            </fieldset>
+            <fieldset class="filters_form_section">
+              <legend>Особенности:</legend>
+              <label class="filter_features"><input type="checkbox" checked name="features">Слайдер</label>
+              <label class="filter_features"><input type="checkbox" name="features">Блок преимуществ</label>
+              <label class="filter_features"><input type="checkbox" checked name="features">Новости</label>
+              <label class="filter_features"><input type="checkbox" name="features">Галерея</label>
+              <label class="filter_features"><input type="checkbox" name="features">Корзина</label>
+            </fieldset>
+            <button class="btn">Показать</button>
           </form>
         </div>
         <div class="catalog_right_col">
           <div class="sorting">
-            <!-- Не знаю, как оформить сортировку -->
-            <span>Сортировать:</span>
-            <a href="#">По цене</a>
-            <a href="#">По типу</a>
-            <a href="#">По функционалу</a>
+            <div class="sorting_type">
+              <span>Сортировать:</span>
+              <ul>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>
+              </ul>
+            </div>
+            <div class="sorting_direction">
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
           </div>
           <div class="catalog_items">
-            <!-- На сколько помню по прошлому интенсиву, при наведении меняется отображение карточки товара. Кажется этого можно добится через :hover? -->
-            <div class="item_card"><a href="#"><img src="#" alt="Aviator"></a></div>
-            <!-- Насчет трех точек над фото не уверен - это через CSS делать нужно будет или просто вырезать с макета? -->
-            <div class="item_card"><a href="#"><img src="#" alt="Sunset"></a></div>
-            <div class="item_card"><a href="#"><img src="#" alt="Forte"></a></div>
-            <div class="item_card"><a href="#"><img src="#" alt="Modern Organic Thai"></a></div>
-            <div class="item_card"><a href="#"><img src="#" alt="Avenue"></a></div>
-            <div class="item_card"><a href="#"><img src="#" alt="Dovetail"></a></div>
-            <div class="item_card_hover">
-              <a href="#">
-                <h2>Aviator</h2>
-                <p></p>
-                <p class="btn_buy"></p>
-              </a>
+            <div class="item_card">
+              <img class="item_image" src="#" alt="Aviator">
+              <div class="item_card_hover">
+                <a class="item_link" href="#">
+                Aviator
+                </a>
+                <p class="item_description"></p>
+                <div class="item_price"></div>
+              </div>
             </div>
-            <div class="item_card_hover">
-              <a href="#">
-                <h2>Sunset</h2>
-                <p>Интернет-магазин с личным кабинетом</p>
-                <p class="btn_buy">10000 р.</p>
-              </a>
+            <div class="item_card">
+              <img class="item_image" src="#" alt="Sunset">
+              <div class="item_card_hover">
+                <a class="item_link" href="#">
+                Sunset
+                </a>
+                <p class="item_description">Интернет-магазин с личным кабинетом</p>
+                <div class="item_price">10000 р.</div>
+              </div>
             </div>
-            <div class="item_card_hover">
-              <a href="#">
-                <h2>Forte</h2>
-                <p></p>
-                <p class="btn_buy"></p>
-              </a>
+            <div class="item_card">
+              <img class="item_image" src="#" alt="Forte">
+              <div class="item_card_hover">
+                <a class="item_link" href="#">
+                Forte
+                </a>
+                <p class="item_description"></p>
+                <div class="item_price"></div>
+              </div>
             </div>
-            <div class="item_card_hover">
-              <a href="#">
-                <h2>Modern Organic Thai</h2>
-                <p></p>
-                <p class="btn_buy"></p>
-              </a>
+            <div class="item_card">
+              <img class="item_image" src="#" alt="Modern Organic Thai">
+              <div class="item_card_hover">
+                <a class="item_link" href="#">
+                Modern Organic Thai
+                </a>
+                <p class="item_description"></p>
+                <div class="item_price"></div>
+              </div>
             </div>
-            <div class="item_card_hover">
-              <a href="#">
-                <h2>Avenue</h2>
-                <p></p>
-                <p class="btn_buy"></p>
-              </a>
+            <div class="item_card">
+              <img class="item_image" src="#" alt="Avenue">
+              <div class="item_card_hover">
+                <a class="item_link" href="#">
+                Avenue
+                </a>
+                <p class="item_description"></p>
+                <div class="item_price"></div>
+              </div>
             </div>
-            <div class="item_card_hover">
-              <a href="#">
-                <h2>Dovetail</h2>
-                <p></p>
-                <p class="btn_buy"></p>
-              </a>
+            <div class="item_card">
+              <img class="item_image" src="#" alt="Dovetail">
+              <div class="item_card_hover">
+                <a class="item_link" href="#">
+                Dovetail
+                </a>
+                <p class="item_description"></p>
+                <div class="item_price"></div>
+              </div>
             </div>
           </div>
           <div class="catalog_pages">
-            <ul class="btn">
+            <ul>
               <li class="active_page">1</li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
@@ -118,17 +155,23 @@
             <h3>Nёrds design studio</h3>
             <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a href="#">Напишите нам</a>
+            <a class="btn btn_write_to_us" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="footer_social">
-          <a href="#">VK</a>
-          <a href="#">FB</a>
-          <a href="#">Inst</a>
-          <h1>Давайте дружить, это выгодно!</h1>
-          <p>Скидка 10% для друзей из социальных сетей</p>
+      <div class="footer_social">
+        <div class="container">
+          <div class="footer_social_btns">
+            <ul>
+              <li><a href="#">VK</a></li>
+              <li><a href="#">FB</a></li>
+              <li><a href="#">Inst</a></li>
+            </ul>
+          </div>
+          <div class="footer_social_slogan">
+            <h1>Давайте дружить, это выгодно!</h1>
+            <p>Скидка 10% для друзей из социальных сетей</p>
+          </div>
         </div>
       </div>
     </footer>
