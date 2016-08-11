@@ -16,63 +16,67 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <div class="login"><a href="#">Корзина</a></div>
+        <div class="cart"><a href="#">Корзина</a></div>
       </div>
     </header>
     <main>
+      <div class="slider">
+        <div class="container">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <p class="slogan">Долго, дорого, скрупулезно.</p>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a href="#">Узнать больше</a>
+            </div>
+            <div class="slide">тут контент слайда</div>
+            <div class="slide">тут контент слайда</div>
+          </div>
+        </div>
+      </div>
       <div class="container">
-        <div class="slider_1">
-          <h1>Долго, дорого, скрупулезно.</h1>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#">Узнать больше</a>
-        </div>
-        <div class="slider_2">
-          <h1>Слоган</h1>
-          <p></p>
-          <a href="#"></a>
-        </div>
-        <div class="slider_3">
-          <h1>Слоган</h1>
-          <p></p>
-          <a href="#"></a>
-        </div>
         <div class="offers">
-          <div class="offers_col_1">
-            <a href="#"><img src="#" alt="Веб-сайты"></a>
+          <div class="offer_col">
+            <img src="#" alt="Веб-сайты">
             <h2>Веб-Сайты</h2>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#">Заказать</a>
+            <a class="btn btn_red" href="#">Заказать</a>
           </div>
-          <div class="offers_col_2">
-            <a href="#"><img src="#" alt="Приложения"></a>
+          <div class="offer_col">
+            <img src="#" alt="Приложения">
             <h2>Приложения</h2>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#">Заказать</a>
+            <a class="btn btn_green" href="#">Заказать</a>
           </div>
-          <div class="offers_col_3">
-            <a href="#"><img src="#" alt="Презентации"></a>
+          <div class="offer_col">
+            <img src="#" alt="Презентации">
             <h2>Презентации</h2>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#">Заказать</a>
+            <a class="btn btn_yellow" href="#">Заказать</a>
           </div>
         </div>
         <div class="about_us">
-          <div class="about_us_1">
+          <div class="about_us_col_left">
             <h1>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-          </div>
-          <div class="logo_2"><img src="#" alt="Logo_2"></div>
-          <div class="about_us_2">
             <h3>Выполняем заказы на разработку:</h3>
-            <ul>
+            <ul class="about_us_list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
-          <div class="about_us_3">
+          <div class="about_us_col_right">
+            <div class="logo_2"><img src="#" alt="Logo_2"></div>
             <h3>Как мы работаем:</h3>
-            <ul>
+            <ul class="about_us_list">
               <li>С самоотдачей 146%</li>
               <li>Соблюдая сроки на 100%</li>
               <li>По предоплате 50%</li>
@@ -80,24 +84,25 @@
           </div>
         </div>
         <div class="portfolio">
-          <div class="portfolio_img_1"><a href="#"><img src="#" alt="Glukhanko"></a></div>
-          <div class="portfolio_img_2"><a href="//htmlacademy.ru"><img src="#" alt="htmlacademy"></a></div>
-          <div class="portfolio_img_3"><a href="#"><img src="#" alt="Barbershop Borodinski"></a></div>
+          <div class="portfolio_img"><a href="#"><img src="#" alt="Glukhanko"></a></div>
+          <div class="portfolio_img"><a href="//htmlacademy.ru"><img src="#" alt="htmlacademy"></a></div>
+          <div class="portfolio_img"><a href="#"><img src="#" alt="Barbershop Borodinski"></a></div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="container">
-        <div class="map">
-          <div class="contacts">
+      <div class="footer_map">
+        <div class="container">
+          <div class="footer_contacts">
             <h3>Nёrds design studio</h3>
             <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
             <a href="#">Напишите нам</a>
           </div>
-          <div class="pointer"><img src="#" alt="Pointer"></div>
         </div>
-        <div class="social">
+      </div>
+      <div class="container">
+        <div class="footer_social">
           <a href="#">VK</a>
           <a href="#">FB</a>
           <a href="#">Inst</a>
