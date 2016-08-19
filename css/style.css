@@ -4,6 +4,8 @@ body {
   color: #000000;
   font-weight: 500;
   font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -18,4 +20,177 @@ h2 {
   line-height: 30px;
   color: #000000;
   font-weight: 500;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main_header {
+  outline: #eb2525 dashed 5px;
+  margin-bottom: 0px;
+}
+
+.container {
+  outline: #4d47c4 dashed 5px;
+  width: 880px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.main-navigation {
+  float: left;
+  width: 420px;
+}
+
+.shopping_cart {
+  float: right;
+  min-width: 170px;
+}
+
+.slide > img {
+  float: right;
+}
+
+.slide_text {
+  float: left;
+  width: 480px;
+  min-height: 355px;
+  clear: both;
+}
+
+.main_slider {
+  margin-bottom: 80px;
+}
+
+.offer_col {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.offer_col:last-child {
+  margin-right: 0px;
+}
+
+.about_us_text {
+  display: inline-block;
+  width: 620px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+
+
+.about_us_row {
+  font-size: 0px;
+}
+
+.nerds_logo_2 {
+  display: inline-block;
+  width: 240px;
+  height: 119px;
+}
+
+.about_us_list_left {
+  display: inline-block;
+  width: 620px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.about_us_list_right {
+  display: inline-block;
+  width: 240px;
+  font-size: 16px;
+}
+
+.about_us {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #eee;
+}
+
+.offers {
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eee;
+}
+
+.portfolio_img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  width: 33.3333%;
+  font-size: 10px;
+}
+
+.portfolio {
+  font-size: 0px;
+  min-height: 165px;
+  border-bottom: 2px solid #eee;
+}
+
+.portfolio_img a {
+  display: block;
+}
+
+.portfolio_img a img {
+  display: block;
+  margin: auto;
+}
+
+.main_footer {
+  margin-top: 85px;
+}
+
+.footer_map {
+  background: no-repeat center url(/img/map.png);
+  min-height: 415px;
+}
+
+.footer_contacts {
+  width: 250px;
+  height: 240px;
+}
+
+.footer_social_btns {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.footer_social_slogan {
+  float: right;
+  width: 560px;
+}
+
+.greetings {
+  min-height: 245px;
+  text-align: center;
+}
+
+.catalog_left_col {
+  float: left;
+  width: 240px;
+}
+
+.catalog_right_col {
+  float: right;
+  width: 560px;
+}
+
+.item_card {
+  display: inline-block;
+  width: 240px;
+  margin-right: 80px;
+  font-size: 14px;
+}
+
+.item_card:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.catalog_items {
+  font-size: 0px;
 }
