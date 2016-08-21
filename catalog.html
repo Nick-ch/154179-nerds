@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main_header">
       <div class="container clearfix">
-        <div class="logo"><img src="img/nerds_logo.png" width="138" height="55" alt="Logo"></div>
+        <div class="nerds_logo"><a href="index.html"><img src="img/nerds_logo.png" width="138" height="55" alt="Logo"></a></div>
         <nav class="main-navigation">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -17,13 +19,14 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <div class="cart"><a href="#">Корзина</a></div>
+        <div class="shopping_cart"><a href="#">Корзина</a></div>
+      </div>
+      <div class="greetings"> <!-- Не получается выровнять текст по вертикали -->
+        <h1>Добро пожаловать в магазин <br> готовых макетов</h1>
       </div>
     </header>
     <main class="main_content">
-      <div class="greetings container">
-        <h1>Добро пожаловать в магазин готовых макетов</h1>
-      </div>
+
       <div class="container clearfix">
         <div class="catalog_left_col">
           <form action="#" method="get">
@@ -70,8 +73,8 @@
             </div>
             <div class="sorting_direction">
               <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#">up</a></li>
+                <li><a href="#">down</a></li>
               </ul>
             </div>
           </div>

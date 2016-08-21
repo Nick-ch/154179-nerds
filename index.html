@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -13,7 +14,7 @@
           <ul>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -22,37 +23,36 @@
     </header>
     <main class="main_content">
       <div class="main_slider">
-        <!-- Пока не буду слайдер и приветствие перемещать в хедер. Мне удобнее, если хэдер одинаков на всех страницах. -->
         <div class="container">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
+          <input type="radio" id="btn_1" name="toggle" checked>
+          <input type="radio" id="btn_2" name="toggle">
+          <input type="radio" id="btn_3" name="toggle">
           <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+            <label for="btn_1"></label>
+            <label for="btn_2"></label>
+            <label for="btn_3"></label>
           </div>
           <div class="main_slider_container">
             <div class="slide clearfix">
-              <div class="slide_text">
+              <div class="slide_content">
                 <p class="slide_slogan">Долго, дорого, скрупулезно.</p>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <p class="slide_text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                 <a href="#">Узнать больше</a>
               </div>
               <img src="img/slider_1.png" width="338" height="231" alt="slider_01">
             </div>
             <div class="slide clearfix">
-              <div class="slide_text">
+              <div class="slide_content">
                 <p class="slide_slogan">Любите ли вы математику, как любим ее мы?</p>
-                <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+                <p class="slide_text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
                 <a href="#">Узнать больше</a>
               </div>
               <img src="img/slider_2.png" width="230" height="249" alt="slider_02">
             </div>
             <div class="slide clearfix">
-              <div class="slide_text">
-                <p class="slide_slogan">Только наркотики, только хардкор!</p>
-                <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+              <div class="slide_content">
+                <p class="slide_slogan">Только наркотики,<br> только хардкор!</p>
+                <p class="slide_text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
                 <a href="#">Узнать больше</a>
               </div>
               <img src="img/slider_3.png" width="333" height="319" alt="slider_03">
