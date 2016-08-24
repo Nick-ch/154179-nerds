@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  font-style: 18px;
+  font-size: 18px;
   line-height: 30px;
   color: #000000;
   font-weight: 500;
@@ -36,6 +36,32 @@ h3 {
   content: "";
   display: table;
   clear: both;
+}
+
+.btn {
+  display: inline-block;
+  width: 140px;
+  height: 18px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fb565a;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #d6494d;
+}
+
+.btn:active {
+  padding-top: 8px;
+  border-top: 2px solid #9b2d30;
+  background-color: #b63538;
 }
 
 .main_header {
@@ -94,6 +120,11 @@ h3 {
   line-height: 22px;
 }
 
+.offers {
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eee;
+}
+
 .offer_col {
   float: left;
   width: 240px;
@@ -103,6 +134,36 @@ h3 {
 .offer_col h2 {
   text-transform: uppercase;
   margin-top: 15px;
+}
+
+.offer_btn_web {
+
+}
+
+.offer_btn_mobile {
+  background: #00ca74;
+}
+
+.offer_btn_mobile:hover {
+  background: #01a25e;
+}
+
+.offer_btn_mobile:active {
+  border-top: 2px solid #007b47;
+  background: #009053;
+}
+
+.offer_btn_presentation {
+  background: #efc84a;
+}
+
+.offer_btn_presentation:hover {
+  background: #d6ae2c;
+}
+
+.offer_btn_presentation:active {
+  border-top: 2px solid #a3841f;
+  background: #c09b24;
 }
 
 .offer_col:last-child {
@@ -147,10 +208,7 @@ h3 {
   border-bottom: 2px solid #eee;
 }
 
-.offers {
-  padding-bottom: 80px;
-  border-bottom: 2px solid #eee;
-}
+
 
 .portfolio {
   font-size: 0px;
@@ -257,6 +315,7 @@ h3 {
 }
 
 .item_card {
+  position: relative;
   display: inline-block;
   width: 240px;
   margin-right: 80px;
@@ -265,8 +324,48 @@ h3 {
   font-size: 14px;
 }
 
+.item_card img {
+  display: block;
+}
+
 .item_card:nth-child(2n) {
   margin-right: 0;
+}
+
+.item_card_hover {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.item_card_hover h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.item_card_hover .item_link,
+.item_card_hover .item_price {
+  text-decoration: none;
+  color: #000;
+}
+
+.item_card_hover .item_price {
+  display: inline-block;
+  width: 140px;
+  height: 18px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 8.56px;
+  color: #fff;
+  background: #fb565a;
+  border-radius: 3px;
 }
 
 .catalog_items {
@@ -382,19 +481,34 @@ h3 {
 
 
 
+.sorting {
+  outline: 1px dashed red;
+  font-size: 0;
+  min-height: 38px;
+}
+
 .sorting_type {
-  display: inline;
+  float: left;
+  width: 460px;
+  font-size: 0;
 }
 
 .sorting_direction {
-  display: inline;
+  float: right;
+  width: 60px;
+  font-size: 0;
 }
 
-.sorting {
-  outline: 1px dashed red;
+.sorting_type span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-right: 40px;
 }
 
 .sorting_type a{
+  display: inline-block;
   margin-right: 45px;
   font-size: 12px;
   line-height: 18px;
@@ -404,24 +518,27 @@ h3 {
   border-bottom: 1px dotted #00ca74 ;
 }
 
+.sorting_type a:nth-child(3n+1){
+  margin-right: 0;
+}
+
 .sorting_type a:hover {
   color: #000;
   border-bottom: 1px solid #00ca74 ;
 }
 
+.sorting_type a:active {
+  color: #000;
+  border-bottom: none;
+}
+
 .sorting_direction a{
+  display: inline-block;
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
   color: #cacaca;
-}
-
-.sorting_type span {
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  padding-right: 40px;
 }
 
 .catalog_pages {
