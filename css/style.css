@@ -410,22 +410,9 @@ h3 {
   text-transform: uppercase;
 }
 
-.item_card_hover .item_link,
-.item_card_hover .item_price {
+.item_card_hover .item_link {
   text-decoration: none;
   color: #000;
-}
-
-.item_card_hover .item_price {
-  display: inline-block;
-  width: 140px;
-  height: 18px;
-  padding: 10px;
-  font-size: 18px;
-  line-height: 8.56px;
-  color: #fff;
-  background: #fb565a;
-  border-radius: 3px;
 }
 
 .catalog_items {
@@ -587,7 +574,6 @@ h3 {
 .catalog_pages a {
   display: inline-block;
   min-width: 18px;
-  height: 18px;
 
   padding: 10px;
   margin-right: 10px;
