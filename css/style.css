@@ -282,6 +282,8 @@ h3 {
 }
 
 .btn_write_to_us {
+  box-sizing: border-box;
+  height: auto;
   width: 100%;
 }
 
