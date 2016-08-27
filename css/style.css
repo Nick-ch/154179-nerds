@@ -41,7 +41,6 @@ h3 {
 .btn {
   display: inline-block;
   width: 140px;
-  height: 18px;
   padding: 10px;
   font-size: 12px;
   line-height: 18px;
@@ -283,7 +282,6 @@ h3 {
 
 .btn_write_to_us {
   box-sizing: border-box;
-  height: auto;
   width: 100%;
 }
 
