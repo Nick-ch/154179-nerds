@@ -504,7 +504,6 @@ h3 {
 
 
 .sorting {
-  outline: 1px dashed red;
   font-size: 0;
   margin-bottom: 18px;
 }
@@ -556,11 +555,27 @@ h3 {
 
 .sorting_direction a{
   display: inline-block;
-  font-size: 12px;
-  line-height: 18px;
+  width: 12px;
+  margin-right: 5px;
+  font-size: 23px;
+  line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #cacaca;
+  color: #c1c1c1;
+}
+
+
+
+.sorting_direction a:hover:not(.current_sort_direction) {
+  color: #b5b5b5;
+}
+
+.sorting_direction a:active:not(.current_sort_direction) {
+  color: #000;
+}
+
+.sorting_direction .current_sort_direction {
+  color: #00ca74;
 }
 
 .catalog_pages {

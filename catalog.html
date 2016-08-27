@@ -71,9 +71,9 @@
               <a href="#">По типу</a>
               <a href="#">По функционалу</a>
             </div>
-            <div class="sorting_direction">
-              <a href="#">up</a>
-              <a href="#">down</a>
+            <div class="sorting_direction"> <!-- Проблема: спан выпадает из ссылки из-за своих размеров -->
+              <a class="current_sort_direction" href="#"><span class="icon-down-dir"></span></a>
+              <a href="#"><span class="icon-up-dir"></span></a>
             </div>
           </div>
           <div class="catalog_items">
