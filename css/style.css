@@ -462,6 +462,7 @@ h3 {
 
 .main_navigation a:hover:not(.current_page),
 .shopping_cart a:hover {
+  opacity: 1;
   color: #fb565a;
 }
 
