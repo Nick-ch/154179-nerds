@@ -5,21 +5,24 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/symbols-nerds.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main_header catalog_header">
       <div class="container clearfix">
         <div class="nerds_logo"><a href="index.html"><img src="img/nerds_logo.png" width="138" height="55" alt="Logo"></a></div>
-        <nav class="main-navigation">
+        <nav class="main_navigation">
           <ul>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a class="current_page">Магазин</a></li>
+            <li><a class="current_page" href="#">Контакты</a></li>
           </ul>
         </nav>
-        <div class="shopping_cart"><a href="#">Корзина</a></div>
+        <div class="shopping_cart">
+          <a class="current_page" href="#"><span class="icon-basket"></span>Корзина</a>
+        </div>
       </div>
       <div class="greetings">
         <h1>Добро пожаловать в магазин <br> готовых макетов</h1>
@@ -158,9 +161,9 @@
       <div class="footer_social">
         <div class="container clearfix">
           <div class="footer_social_btns">
-            <a href="#">VK</a>
-            <a href="#">FB</a>
-            <a href="#">Inst</a>
+            <a href="#"><span class="icon-vk"></span></a>
+            <a href="#"><span class="icon-facebook"></span></a>
+            <a href="#"><span class="icon-instagramm"></span></a>
           </div>
           <div class="footer_social_slogan">
             <h1>Давайте дружить, это выгодно!</h1>

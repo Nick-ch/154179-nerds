@@ -75,8 +75,7 @@ h3 {
   padding: 0 10px;
   margin: 0 auto;
 }
-.main-navigation {
-  outline: 1px dashed red;
+.main_navigation {
   float: left;
   width: 580px;
 }
@@ -85,6 +84,13 @@ h3 {
   float: right;
   min-width: 100px;
 }
+
+.shopping_cart span {
+  margin-right: 10px;
+  opacity: .3;
+}
+
+
 
 .slide img {
   float: right;
@@ -118,6 +124,11 @@ h3 {
 .slide_text {
   font-size: 16px;
   line-height: 22px;
+}
+
+.slide_more_btn {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .offers {
@@ -266,10 +277,20 @@ h3 {
   line-height: 20px;
 }
 
+.footer_contacts p {
+  color: #666;
+}
+
+.btn_write_to_us {
+  width: 100%;
+}
+
 .footer_social {
   padding-top: 75px;
   padding-bottom: 75px;
 }
+
+
 
 .footer_social_btns {
   float: left;
@@ -278,13 +299,52 @@ h3 {
   font-size: 0;
 }
 
+
+.footer_social_btns a {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  margin-right: 27px;
+  background: #e1e1e1;
+  border-radius: 50%;
+}
+
+.footer_social_btns a:nth-child(3n) {
+  margin-right: 0;
+}
+
+.footer_social_btns span {
+  font-size: 23px;
+  line-height: 42px;
+  color: #fff;
+}
+
+.footer_social_btns a:hover {
+  background: #fb565a;
+}
+
+.footer_social_btns a:active {
+  border-top: 3px solid #b94549;
+  padding-top: 7px;
+  background: #d6494d;
+}
+
 .footer_social_slogan {
   float: right;
   width: 560px;
 }
 
+.footer_social_slogan h1,
+.footer_social_slogan p {
+  margin: 2px;
+}
 
- /* inner page */
+
+
+
 
 .greetings {
   padding-top: 70px;
@@ -372,8 +432,7 @@ h3 {
   font-size: 0;
 }
 
-.main-navigation ul {
-  outline: 1px dashed green;
+.main_navigation ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -381,20 +440,7 @@ h3 {
   text-align: right;
 }
 
-.main-navigation a {
-  outline: 1px dashed blue;
-  display: block;
-  padding-top: 33px;
-  margin: 0 22px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-
-}
-
-.main-navigation li{
-  outline: 1px dashed black;
+.main_navigation li{
   display: inline-block;
   vertical-align: top;
 
@@ -402,7 +448,35 @@ h3 {
   line-height: 18px;
 }
 
+.main_navigation a {
+  display: block;
+  padding-top: 33px;
+  margin: 0 22px;
 
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+
+.main_navigation a:hover:not(.current_page),
+.shopping_cart a:hover {
+  color: #fb565a;
+}
+
+.main_navigation a:active:not(.current_page),
+.shopping_cart a:active {
+  color: #000;
+  opacity: .4;
+}
+
+
+
+.main_navigation .current_page,
+.shopping_cart .current_page {
+  border-bottom: 2px solid #fb565a;
+}
 
 .nerds_logo {
   float: left;
@@ -439,52 +513,14 @@ h3 {
   line-height: 36px;
 }
 
-.footer_contacts p {
-  color: #666;
-}
 
-.footer_social_btns ul {
-  outline: 1px dashed green;
-  list-style: none;
-  font-size: 0;
-  padding: 0;
-}
-
-.footer_social_btns li {
-  outline: 1px dashed black;
-  display: inline-block;
-  font-size: 20px;
-  margin-right: 27px;
-}
-
-
-
-.footer_social_btns a {
-  outline: 1px dashed blue;
-  display: inline-block;
-  vertical-align: middle;
-  width: 62px;
-  height: 62px;
-  font-size: 16px;
-}
-
-
-
-.footer_social_btns li:last-child {
-  margin-right: 0;
-}
-
-.footer_social_slogan h1,
-.footer_social_slogan p {
-  margin: 2px;
-}
 
 
 
 .sorting {
   outline: 1px dashed red;
   font-size: 0;
-  min-height: 38px;
+  margin-bottom: 18px;
 }
 
 .sorting_type {
