@@ -40,7 +40,7 @@ h3 {
 
 .btn {
   display: inline-block;
-  width: 140px;
+  box-sizing: border-box;
   padding: 10px;
   font-size: 12px;
   line-height: 18px;
@@ -76,7 +76,7 @@ h3 {
 }
 .main_navigation {
   float: left;
-  width: 580px;
+  width: 600px;
 }
 
 .shopping_cart {
@@ -85,6 +85,8 @@ h3 {
 }
 
 .shopping_cart span {
+  font-size: 16px;
+  line-height: 8.56px;
   margin-right: 10px;
   opacity: .3;
 }
@@ -93,7 +95,7 @@ h3 {
 
 .slide img {
   float: right;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .slide_content {
@@ -106,8 +108,16 @@ h3 {
   background: #eee;
 }
 
+#btn_1,
+#btn_2,
+#btn_3 {
+  display: none;
+}
+
 .slide {
   display: none;
+  padding-top: 35px;
+  padding-bottom: 67px;
 }
 
 .slide:first-child {
@@ -115,18 +125,24 @@ h3 {
 }
 
 .slide_slogan {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 18px;
   font-size: 36px;
   line-height: 36px;
 }
 
 .slide_text {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 22px;
 }
 
 .slide_more_btn {
-  padding-left: 70px;
-  padding-right: 70px;
+  width: 220px;
+  margin-top: 12px;
 }
 
 .offers {
@@ -140,16 +156,30 @@ h3 {
   margin-right: 80px;
 }
 
+.offer_col img{
+  display: block;
+}
+
 .offer_col h2 {
   text-transform: uppercase;
+  margin-top: 23px;
+  margin-bottom: 15px;
+}
+
+.offer_col p {
+  margin: 0;
   margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 .offer_btn_web {
-
+  width: 120px;
 }
 
 .offer_btn_mobile {
+  width: 120px;
   background: #00ca74;
 }
 
@@ -163,6 +193,7 @@ h3 {
 }
 
 .offer_btn_presentation {
+  width: 120px;
   background: #efc84a;
 }
 
@@ -179,11 +210,32 @@ h3 {
   margin-right: 0;
 }
 
+.about_us {
+  padding-top: 60px;
+  padding-bottom: 48px;
+  border-bottom: 2px solid #eee;
+}
+
 .about_us_text {
   display: inline-block;
-  width: 620px;
-  margin-right: 20px;
+  width: 610px;
+  margin-right: 30px;
   font-size: 16px;
+  line-height: 22px;
+}
+
+.about_us_text_lead {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.about_us_text_content {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 22px;
 }
 
 
@@ -194,36 +246,48 @@ h3 {
 
 .nerds_logo_big {
   display: inline-block;
+  vertical-align: top;
   width: 240px;
   height: 119px;
 }
 
-.about_us_list_left {
+.about_us_list {
   display: inline-block;
+  font-size: 16px;
+}
+
+.about_us_list.list_left {
   width: 620px;
   margin-right: 20px;
-  font-size: 16px;
 }
 
-.about_us_list_right {
-  display: inline-block;
+.about_us_list.list_right {
   width: 240px;
-  font-size: 16px;
 }
 
-.about_us {
-  padding-top: 60px;
-  padding-bottom: 70px;
-  border-bottom: 2px solid #eee;
+.about_us_list h3 {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
+.about_us_list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about_us_list li {
+  padding-left: 36px;
+  padding-bottom: 22px;
+}
 
 
 .portfolio {
   font-size: 0px;
-  padding-top: 45px;
-  padding-bottom: 30px;
-  padding-left: 15px;
+  padding-top: 44px;
+  padding-bottom: 32px;
+  padding-left: 6px;
   padding-right: 15px;
   border-bottom: 2px solid #eee;
 }
@@ -268,19 +332,30 @@ h3 {
 .footer_contacts {
   position: absolute;
   top: 87px;
-  width: 204px;
+  width: 210px;
   background: #fff;
-  padding: 28px 23px;
+  padding: 12px 20px;
   line-height: 20px;
+}
+
+.footer_contacts h3 {
+  margin: 0;
+  margin: 16px 0;
 }
 
 .footer_contacts p {
   color: #666;
 }
 
+.footer_contacts .tel {
+  margin: 20px 0;
+}
+
 .btn_write_to_us {
   box-sizing: border-box;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 13px;
 }
 
 .footer_social {
@@ -372,6 +447,10 @@ h3 {
   width: 560px;
 }
 
+.catalog_items {
+  font-size: 0;
+}
+
 .item_card {
   position: relative;
   display: inline-block;
@@ -413,8 +492,8 @@ h3 {
   color: #000;
 }
 
-.catalog_items {
-  font-size: 0;
+.item_buy_btn {
+  width: 100%;
 }
 
 .main_navigation ul {
@@ -446,7 +525,7 @@ h3 {
 
 
 .main_navigation a:hover:not(.current_page),
-.shopping_cart a:hover {
+.shopping_cart:hover {
   opacity: 1;
   color: #fb565a;
 }
@@ -489,15 +568,9 @@ h3 {
 
 
 
-.offer_col p {
-  font-size: 15px;
-  line-height: 22px;
-}
 
-.about_us_lead {
-  font-size: 36px;
-  line-height: 36px;
-}
+
+
 
 
 
