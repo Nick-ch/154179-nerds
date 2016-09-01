@@ -17,11 +17,11 @@
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li><a class="current_page">Магазин</a></li>
-            <li><a class="current_page" href="#">Контакты</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
         <div class="shopping_cart">
-          <a class="current_page" href="#"><span class="icon-basket"></span>Корзина</a>
+          <a href="#"><span class="icon-basket"></span>Корзина</a>
         </div>
       </div>
       <div class="greetings">
@@ -32,35 +32,53 @@
       <div class="container clearfix">
         <div class="catalog_left_col">
           <form action="#" method="get">
-            <div class="price_range">
+            <div class="price_range clearfix">
               <h2>Стоимость:</h2>
               <div class="range_controls">
                 <div class="scale">
-                  <div style="width:75%;" class="bar"></div>
+                  <div style="width:70%;" class="bar"></div>
                 </div>
                 <div class="toggle min_toggle"></div>
                 <div class="toggle max_toggle"></div>
               </div>
               <div class="price_controls">
-                <label class="filter_price_range">От<input type="text" name="price_range_min" value="0"></label>
-                <label  class="filter_price_range">До<input type="text" name="price_range_max" value="15000"></label>
+                <label class="price_range_min">От<input type="text" name="price_range_min" value="0"></label>
+                <label  class="price_range_max">До<input type="text" name="price_range_max" value="15000"></label>
               </div>
             </div>
             <fieldset class="filters_form_section">
               <legend>Сетка:</legend>
-              <label class="filter_grid_type"><input type="radio" checked name="grid_type">Адаптивная</label>
-              <label class="filter_grid_type"><input type="radio" name="grid_type">Фиксированная</label>
-              <label class="filter_grid_type"><input type="radio" name="grid_type">Резиновая</label>
+
+              <input id="id_1" type="radio" checked name="grid_type">
+              <label for="id_1" class="filter_grid_type">Адаптивная</label>
+
+              <input id="id_2" type="radio" name="grid_type">
+              <label for="id_2" class="filter_grid_type">Фиксированная</label>
+
+              <input id="id_3" type="radio" name="grid_type">
+              <label for="id_3" class="filter_grid_type">Резиновая</label>
+
             </fieldset>
             <fieldset class="filters_form_section">
               <legend>Особенности:</legend>
-              <label class="filter_features"><input type="checkbox" checked name="features">Слайдер</label>
-              <label class="filter_features"><input type="checkbox" name="features">Блок преимуществ</label>
-              <label class="filter_features"><input type="checkbox" checked name="features">Новости</label>
-              <label class="filter_features"><input type="checkbox" name="features">Галерея</label>
-              <label class="filter_features"><input type="checkbox" name="features">Корзина</label>
+
+              <input id="id_4" type="checkbox" checked name="features">
+              <label for="id_4" class="filter_features">Слайдер</label>
+
+              <input id="id_5" type="checkbox" name="features">
+              <label for="id_5" class="filter_features">Блок преимуществ</label>
+
+              <input id="id_6" type="checkbox" checked name="features">
+              <label for="id_6" class="filter_features">Новости</label>
+
+              <input id="id_7" type="checkbox" name="features">
+              <label for="id_7" class="filter_features">Галерея</label>
+
+              <input id="id_8" type="checkbox" name="features">
+              <label for="id_8" class="filter_features">Корзина</label>
+
             </fieldset>
-            <button class="btn">Показать</button>
+            <button class="btn btn_filter_show">Показать</button>
           </form>
         </div>
         <div class="catalog_right_col">
@@ -79,61 +97,61 @@
           <div class="catalog_items">
             <div class="item_card">
               <img class="item_image" src="img/shop_item_aviator.jpg" width="240" height="240" alt="Aviator">
-              <div class="item_card_hover">
+              <div class="item_card_description">
                 <h2>
                   <a class="item_link" href="#">Aviator</a>
                 </h2>
-                <p class="item_description">Одностраничный макет с авторским дизайном</p>
+                <p>Одностраничный макет с авторским дизайном</p>
                 <a class="btn item_buy_btn" href="#">8000 р.</a>
               </div>
             </div>
             <div class="item_card">
               <img class="item_image" src="img/shop_item_sunset.jpg" width="240" height="240" alt="Sunset">
-              <div class="item_card_hover">
+              <div class="item_card_description">
                 <h2>
                   <a class="item_link" href="#">Sunset</a>
                 </h2>
-                <p class="item_description">Интернет-магазин с личным кабинетом</p>
+                <p>Интернет-магазин с личным кабинетом</p>
                 <a class="btn item_buy_btn" href="#">10000 р.</a>
               </div>
             </div>
             <div class="item_card">
               <img class="item_image" src="img/shop_item_forte.jpg" width="240" height="240" alt="Forte">
-              <div class="item_card_hover">
+              <div class="item_card_description">
                 <h2>
                   <a class="item_link" href="#">Forte</a>
                 </h2>
-                <p class="item_description">Отличный макет для личного блога</p>
+                <p>Отличный макет для личного блога</p>
                 <a class="btn item_buy_btn" href="#">5000 р.</a>
               </div>
             </div>
             <div class="item_card">
               <img class="item_image" src="img/shop_item_mot.jpg" width="240" height="240" alt="Modern Organic Thai">
-              <div class="item_card_hover">
+              <div class="item_card_description">
                 <h2>
                   <a class="item_link" href="#">Modern Organic Thai</a>
                 </h2>
-                <p class="item_description">Сайт для ресторана быстрого питания</p>
+                <p>Сайт для ресторана быстрого питания</p>
                 <a class="btn item_buy_btn" href="#">12000 р.</a>
               </div>
             </div>
             <div class="item_card">
               <img class="item_image" src="img/shop_item_avenue.jpg" width="240" height="240" alt="Avenue">
-              <div class="item_card_hover">
+              <div class="item_card_description">
                 <h2>
                   <a class="item_link" href="#">Avenue</a>
                 </h2>
-                <p class="item_description">Макет для блога о путешествиях</p>
+                <p>Макет для блога о путешествиях</p>
                 <a class="btn item_buy_btn" href="#">8000 р.</a>
               </div>
             </div>
             <div class="item_card">
               <img class="item_image" src="img/shop_item_dovetail.jpg" width="240" height="240" alt="Dovetail">
-              <div class="item_card_hover">
+              <div class="item_card_description">
                 <h2>
                   <a class="item_link" href="#">Dovetail</a>
                 </h2>
-                <p class="item_description">Интернет-магазин с галереей товаров</p>
+                <p>Интернет-магазин с галереей товаров</p>
                 <a class="btn item_buy_btn" href="#">14000 р.</a>
               </div>
             </div>
