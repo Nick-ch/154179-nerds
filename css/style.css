@@ -74,14 +74,81 @@ h3 {
   padding: 0 10px;
   margin: 0 auto;
 }
+
+.nerds_logo {
+  float: left;
+}
+
+.nerds_logo img {
+  display: block;
+}
+
 .main_navigation {
   float: left;
   width: 600px;
 }
 
+.main_navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: right;
+}
+
+.main_navigation li{
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.main_navigation li:last-child {
+  margin-right: 0;
+}
+
+.main_navigation a {
+  display: block;
+  padding-top: 33px;
+  margin: 0 22px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.main_navigation a:hover:not(.current_page),
+.shopping_cart a:hover {
+  opacity: 1;
+  color: #fb565a;
+}
+
+.main_navigation a:active:not(.current_page),
+.shopping_cart a:active {
+  color: #000;
+  opacity: .4;
+}
+
+.main_navigation .current_page,
+.shopping_cart .current_page {
+  border-bottom: 2px solid #fb565a;
+}
+
 .shopping_cart {
   float: right;
   min-width: 100px;
+}
+
+.shopping_cart a {
+  display: block;
+  padding-top: 33px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .shopping_cart span {
@@ -100,7 +167,7 @@ h3 {
 
 .slide_content {
   float: left;
-  width: 462px;
+  width: 470px;
 }
 
 .main_slider {
@@ -120,7 +187,7 @@ h3 {
   padding-bottom: 67px;
 }
 
-.slide:first-child {
+.slide:nth-child(1) {
   display: block;
 }
 
@@ -319,7 +386,7 @@ h3 {
 }
 
 .main_footer {
-  margin-top: 85px;
+  margin-top: 79px;
 }
 
 .footer_map {
@@ -422,14 +489,14 @@ h3 {
 
 
 .greetings {
-  padding-top: 70px;
-  padding-bottom: 80px;
+  padding-top: 65px;
+  padding-bottom: 84px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .catalog_header {
-  margin-bottom: 80px;
+  margin-bottom: 74px;
 }
 
 .greetings h1 {
@@ -449,7 +516,8 @@ h3 {
 }
 
 .price_range h2 {
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .range_controls {
@@ -518,14 +586,18 @@ h3 {
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+}
+
+.filters_form_section:nth-child(3) {
+  margin-bottom: 51px;
 }
 
 .filters_form_section legend {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 23px;
+  margin-bottom: 4px;
 }
 
 .filters_form_section label{
@@ -533,8 +605,10 @@ h3 {
   position: relative;
   font-size: 16px;
   line-height: 20px;
-  margin: 28px 0;
+  margin: 0;
   padding-left: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .filters_form_section input {
@@ -672,75 +746,7 @@ input[type="checkbox"]:checked + .filter_features::before {
   width: 100%;
 }
 
-.main_navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: right;
-}
 
-.main_navigation li{
-  display: inline-block;
-  vertical-align: top;
-
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.main_navigation a {
-  display: block;
-  padding-top: 33px;
-  margin: 0 22px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-}
-
-
-
-.main_navigation a:hover:not(.current_page),
-.shopping_cart:hover {
-  opacity: 1;
-  color: #fb565a;
-}
-
-.main_navigation a:active:not(.current_page),
-.shopping_cart a:active {
-  color: #000;
-  opacity: .4;
-}
-
-
-
-.main_navigation .current_page,
-.shopping_cart .current_page {
-  border-bottom: 2px solid #fb565a;
-}
-
-.nerds_logo {
-  float: left;
-}
-
-.shopping_cart a {
-  display: block;
-  padding-top: 33px;
-
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.main-navigation li:last-child {
-  margin-right: 0;
-}
-
-.nerds_logo img {
-  display: block;
-}
 
 
 
@@ -754,7 +760,8 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 .sorting {
   font-size: 0;
-  margin-bottom: 18px;
+  margin-top: 4px;
+  margin-bottom: 9px;
 }
 
 .sorting_type {
@@ -774,6 +781,7 @@ input[type="checkbox"]:checked + .filter_features::before {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
+  font-weight: bold;
   padding-right: 40px;
 }
 
