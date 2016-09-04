@@ -5,7 +5,6 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/symbols-nerds.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -89,7 +88,7 @@
               <a href="#">По типу</a>
               <a href="#">По функционалу</a>
             </div>
-            <div class="sorting_direction"> <!-- Проблема: спан выпадает из ссылки из-за своих размеров -->
+            <div class="sorting_direction">
               <a class="current_sort_direction" href="#"><span class="icon-down-dir"></span></a>
               <a href="#"><span class="icon-up-dir"></span></a>
             </div>
@@ -190,5 +189,25 @@
         </div>
       </div>
     </footer>
+    <div class="modal_content">
+      <div class="write_us_popup">
+        <button class="modal_content_close_btn" type="button" title="Закрыть">Закрыть</button>
+        <form action="#" method="post">
+          <label>
+            <span>Ваше имя</span>
+            <input type="text" name="Name" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label>
+            <span>Ваш e-mail</span>
+            <input type="text" name="E-mail" placeholder="Для отправки ответа">
+          </label>
+          <label>
+            <span>Текст письма</span>
+            <textarea name="Text" placeholder="В свободной форме"></textarea>
+          </label>
+          <button class="btn write_us_send_btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

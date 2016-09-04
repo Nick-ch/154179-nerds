@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/symbols-nerds.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -42,7 +41,7 @@
                 <p class="slide_text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                 <a class="btn slide_more_btn" href="#">Узнать больше</a>
               </div>
-              <img src="img/slider_1.png" width="338" height="231" alt="slider_01">
+              <img class="slider_img_01" src="img/slider_1.png" width="338" height="231" alt="slider_01">
             </div>
             <div class="slide clearfix">
               <div class="slide_content">
@@ -50,7 +49,7 @@
                 <p class="slide_text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
                 <a class="btn slide_more_btn" href="#">Узнать больше</a>
               </div>
-              <img src="img/slider_2.png" width="230" height="249" alt="slider_02">
+              <img class="slider_img_02" src="img/slider_2.png" width="230" height="249" alt="slider_02">
             </div>
             <div class="slide clearfix">
               <div class="slide_content">
@@ -58,7 +57,7 @@
                 <p class="slide_text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
                 <a class="btn slide_more_btn" href="#">Узнать больше</a>
               </div>
-              <img src="img/slider_3.png" width="333" height="319" alt="slider_03">
+              <img class="slider_img_03" src="img/slider_3.png" width="333" height="319" alt="slider_03">
             </div>
           </div>
         </div>
@@ -143,5 +142,25 @@
         </div>
       </div>
     </footer>
+    <div class="modal_content">
+      <div class="write_us_popup">
+        <button class="modal_content_close_btn" type="button" title="Закрыть">Закрыть</button>
+        <form action="#" method="post">
+          <label>
+            <span>Ваше имя</span>
+            <input type="text" name="Name" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label>
+            <span>Ваш e-mail</span>
+            <input type="text" name="E-mail" placeholder="Для отправки ответа">
+          </label>
+          <label>
+            <span>Текст письма</span>
+            <textarea name="Text" placeholder="В свободной форме"></textarea>
+          </label>
+          <button class="btn write_us_send_btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
