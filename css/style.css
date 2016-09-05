@@ -1,30 +1,34 @@
 body {
   position: relative;
+
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 22px;
   color: #000000;
   font-weight: 500;
   font-family: "Roboto", "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
+  margin: 0;
+  padding: 0;
+
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   font-weight: 500;
-  margin: 0;
-  padding: 0;
 }
 
 h2 {
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   font-weight: 500;
-  margin: 0;
-  padding: 0;
 }
 
 h3 {
@@ -43,6 +47,7 @@ h3 {
   display: inline-block;
   box-sizing: border-box;
   padding: 10px;
+
   font-size: 12px;
   line-height: 18px;
   vertical-align: middle;
@@ -50,6 +55,7 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+
   background: #fb565a;
   border-radius: 4px;
 }
@@ -123,8 +129,8 @@ h3 {
 
 .container {
   width: 880px;
-  padding: 0 10px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .nerds_logo {
@@ -141,11 +147,12 @@ h3 {
 }
 
 .main_navigation ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+
   font-size: 0;
   text-align: right;
+  list-style: none;
 }
 
 .main_navigation li{
@@ -162,8 +169,8 @@ h3 {
 
 .main_navigation a {
   display: block;
-  padding-top: 33px;
   margin: 0 22px;
+  padding-top: 33px;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -173,8 +180,8 @@ h3 {
 .main_navigation a:hover:not(.current_page),
 .shopping_cart:hover a,
 .shopping_cart:hover span {
-  opacity: 1;
   color: #fb565a;
+  opacity: 1;
 }
 
 .main_navigation a:active:not(.current_page),
@@ -192,6 +199,7 @@ h3 {
 .shopping_cart {
   float: right;
   min-width: 100px;
+
   text-align: right;
 }
 
@@ -207,9 +215,10 @@ h3 {
 }
 
 .shopping_cart span {
+  margin-right: 18px;
+
   font-size: 16px;
   line-height: 8.56px;
-  margin-right: 18px;
   opacity: .3;
 }
 
@@ -246,6 +255,7 @@ h3 {
   margin: 0;
   margin-top: 18px;
   margin-bottom: 15px;
+
   font-size: 16px;
   line-height: 22px;
 }
@@ -284,11 +294,15 @@ h3 {
 .main_slider label {
   display: inline-block;
   vertical-align: top;
+
   width: 4px;
   height: 4px;
+
   margin-right: 9px;
+
   border: 3px solid white;
   border-radius: 50%;
+
   background: white;
   cursor: pointer;
 }
@@ -297,9 +311,11 @@ h3 {
   position: absolute;
   bottom: 94px;
   left: 50%;
+
   width: 200px;
   height: 10px;
-  transform: translateX(-53%); /* Странно, что приходится ставить такое значение, вместо 50%. Может на макете не по центру кнопки расположены? =)) Пробовал margin-left: -100px; - получается тоже не очень.*/
+  transform: translateX(-53%);
+
   text-align: center;
   font-size: 0;
   line-height: 0;
@@ -336,15 +352,17 @@ h3 {
 }
 
 .offer_col h2 {
-  text-transform: uppercase;
   margin-top: 23px;
   margin-bottom: 15px;
+
+  text-transform: uppercase;
 }
 
 .offer_col p {
   margin: 0;
   margin-top: 15px;
   margin-bottom: 25px;
+
   font-size: 15px;
   line-height: 22px;
 }
@@ -388,13 +406,17 @@ h3 {
 .about_us {
   padding-top: 60px;
   padding-bottom: 48px;
+
   border-bottom: 2px solid #eee;
 }
 
 .about_us_text {
   display: inline-block;
+
   width: 610px;
+
   margin-right: 30px;
+
   font-size: 16px;
   line-height: 22px;
 }
@@ -403,6 +425,7 @@ h3 {
   margin: 0;
   margin-top: 10px;
   margin-bottom: 18px;
+
   font-size: 36px;
   line-height: 36px;
 }
@@ -420,6 +443,7 @@ h3 {
 .nerds_logo_big {
   display: inline-block;
   vertical-align: top;
+
   width: 240px;
   height: 119px;
 }
@@ -445,7 +469,6 @@ h3 {
 }
 
 .about_us_list ul {
-
   margin: 0;
   padding: 0;
   list-style: none;
@@ -462,26 +485,33 @@ h3 {
   position: absolute;
   top: 10px;
   left: 0;
+
   width: 25px;
   height: 2px;
+
   background: #fb565a;
 }
 
 .portfolio {
-  font-size: 0px;
   padding-top: 44px;
   padding-bottom: 32px;
   padding-left: 6px;
   padding-right: 15px;
+
+  font-size: 0px;
+
   border-bottom: 2px solid #eee;
 }
 
 .portfolio_img {
   display: inline-block;
   vertical-align: middle;
+
   width: 210px;
   height: auto;
+
   margin-right: 110px;
+
   opacity: 0.2;
 }
 
@@ -508,17 +538,20 @@ h3 {
 
 .footer_map {
   position: relative;
-  background: no-repeat center url(../img/map.png);
   height: 415px;
+
+  background: no-repeat center url(../img/map.png);
   border-top: 1px solid white;
 }
 
 .footer_contacts {
   position: absolute;
   top: 87px;
+
   width: 210px;
-  background: #fff;
   padding: 12px 20px;
+
+  background: #fff;
   line-height: 20px;
 }
 
@@ -537,7 +570,9 @@ h3 {
 
 .btn_write_to_us {
   box-sizing: border-box;
+
   width: 100%;
+
   margin-top: 10px;
   margin-bottom: 13px;
 }
@@ -557,11 +592,16 @@ h3 {
 .footer_social_btns a {
   display: inline-block;
   vertical-align: middle;
+
   text-align: center;
+
   width: 42px;
   height: 42px;
+
   padding: 10px;
   margin-right: 27px;
+
+  text-decoration: none;
   background: #e1e1e1;
   border-radius: 50%;
 }
@@ -585,8 +625,8 @@ h3 {
 }
 
 .footer_social_btns a:active {
-  border-top: 3px solid #b94549;
   padding-top: 7px;
+  border-top: 3px solid #b94549;
   background: #d6494d;
 }
 
@@ -609,6 +649,7 @@ h3 {
 .greetings {
   padding-top: 65px;
   padding-bottom: 84px;
+
   text-align: center;
   text-transform: uppercase;
 }
@@ -634,16 +675,19 @@ h3 {
 }
 
 .price_range h2 {
-  text-transform: uppercase;
   margin-bottom: 14px;
+  text-transform: uppercase;
 }
 
 .range_controls {
   position: relative;
+
   height: 76px;
-  background: #f1f1f1;
   padding: 0 20px;
   margin-bottom: 14px;
+
+  background: #f1f1f1;
+
   border: 2px solid #f1f1f1;
   border-radius: 4px;
 }
@@ -663,13 +707,15 @@ h3 {
   position: absolute;
   top: 28px;
   left: 10px;
+
   width: 4px;
   height: 4px;
+
   background: #ababab;
   border: 8px solid white;
-  cursor: pointer;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
 }
 
 .range_controls .max_toggle {
@@ -691,8 +737,10 @@ h3 {
 
 .price_controls input {
   width: 60px;
+
   padding: 8px 10px;
   margin-left: 10px;
+
   border: none;
   border-radius: 4px;
   background: #f1f1f1;
@@ -701,10 +749,11 @@ h3 {
 }
 
 .filters_form_section {
-  border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+
+  border: none;
 }
 
 .filters_form_section:nth-child(3) {
@@ -712,21 +761,24 @@ h3 {
 }
 
 .filters_form_section legend {
+  margin-bottom: 4px;
+
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 4px;
 }
 
 .filters_form_section label{
   display: block;
   position: relative;
-  font-size: 16px;
-  line-height: 20px;
+
   margin: 0;
   padding-left: 36px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .filters_form_section input {
@@ -734,13 +786,15 @@ h3 {
 }
 
 .filters_form_section .filter_grid_type::before {
-  position: absolute;
   content: "\25cb";
+
+  position: absolute;
+  left: 0px;
+
   font-family: "symbols-nerds";
   color: #c1c1c1;
   font-size: 28px;
   line-height: 20px;
-  left: 0px;
 }
 
 input[type="radio"]:checked + .filter_grid_type::before {
@@ -748,13 +802,15 @@ input[type="radio"]:checked + .filter_grid_type::before {
 }
 
 .filters_form_section .filter_features::before {
-  position: absolute;
   content: "\2610";
+
+  position: absolute;
+  left: 0px;
+
   font-family: "symbols-nerds";
   color: #c1c1c1;
   font-size: 28px;
   line-height: 20px;
-  left: 0px;
 }
 
 input[type="checkbox"]:checked + .filter_features::before {
@@ -764,6 +820,7 @@ input[type="checkbox"]:checked + .filter_features::before {
 .btn_filter_show {
   padding-left: 48px;
   padding-right: 48px;
+
   border: none;
   color: #000;
   background: #f1f1f1;
@@ -774,12 +831,10 @@ input[type="checkbox"]:checked + .filter_features::before {
 }
 
 .btn_filter_show:active {
-  border-top: 2px solid #b5b5b5;
   padding-top: 8px;
+  border-top: 2px solid #b5b5b5;
   background-color: #d5d5d5;
 }
-
-
 
 
 
@@ -797,10 +852,13 @@ input[type="checkbox"]:checked + .filter_features::before {
 .item_card {
   position: relative;
   display: inline-block;
+
   width: 240px;
   min-height: 240px;
+
   margin-right: 80px;
   margin-bottom: 80px;
+
   vertical-align: top;
   border-top: 30px solid #f1f1f1;
   border-top-left-radius: 4px;
@@ -820,9 +878,12 @@ input[type="checkbox"]:checked + .filter_features::before {
   position: absolute;
   top: -20px;
   left: 12px;
+
   content: "";
+
   width: 10px;
   height: 10px;
+
   border-radius: 50%;
   background: #fff;
   box-shadow:
@@ -839,22 +900,26 @@ input[type="checkbox"]:checked + .filter_features::before {
 }
 
 .item_card_description {
-/*  display: none;*/
+  display: none;
   position: absolute;
   top: 20px;
   left: 20px;
+
   box-sizing: border-box;
+
   width: 200px;
   min-height: 200px;
+
+  padding: 32px 20px 70px 20px;
+
   background: #fff;
   text-align: center;
-  padding: 32px 20px 0px 20px;
-
 }
 
 .item_card_description h2 {
   margin: 0;
   margin-bottom: 8px;
+
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -876,6 +941,7 @@ input[type="checkbox"]:checked + .filter_features::before {
   bottom: 30px;
   left: 30px;
   right: 30px;
+
   font-size: 18px;
 }
 
@@ -883,18 +949,11 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 
 
-
-
-
-
-
-
-
-
 .sorting {
-  font-size: 0;
   margin-top: 4px;
   margin-bottom: 12px;
+
+  font-size: 0;
 }
 
 .sorting_type {
@@ -906,17 +965,20 @@ input[type="checkbox"]:checked + .filter_features::before {
 .sorting_direction {
   float: right;
   width: 60px;
+
   font-size: 0;
   text-align: right;
 }
 
 .sorting_type span {
   display: inline-block;
+
+  padding-right: 40px;
+
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
   font-weight: bold;
-  padding-right: 40px;
 }
 
 .sorting_type a{
@@ -1028,9 +1090,11 @@ input[type="checkbox"]:checked + .filter_features::before {
 /*  transform: translateX(-50%);*/
   margin-left: -325px;
 
-  width: 470px;
+  width: 460px;
   height: 316px;
-  padding: 50px 80px;
+  padding: 50px;
+  padding-left: 80px;
+  padding-right: 90px;
 
   background: white;
   box-shadow: 0 10px 40px 0 #000101;
@@ -1078,17 +1142,18 @@ input[type="checkbox"]:checked + .filter_features::before {
 }
 
 .write_us_popup form {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 0;
 }
 
 .write_us_popup label {
   display: inline-block;
   margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .write_us_popup label:nth-child(1) {
-  margin-right: 17px;
+  margin-right: 20px;
 }
 
 .write_us_popup span {
@@ -1134,10 +1199,7 @@ input[type="checkbox"]:checked + .filter_features::before {
 }
 
 .write_us_send_btn {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-51%);
   width: 460px;
+  margin-top: 25px;
   border: 0;
 }
