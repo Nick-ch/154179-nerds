@@ -313,6 +313,8 @@ h3 {
   bottom: 94px;
   left: 50%;
 
+  margin-left: -10px;
+
   width: 200px;
   height: 10px;
   transform: translateX(-50%);
