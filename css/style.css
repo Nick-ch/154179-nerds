@@ -983,7 +983,9 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 .sorting_type a{
   display: inline-block;
+
   margin-right: 45px;
+
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
@@ -1008,9 +1010,12 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 .sorting_direction a{
   display: inline-block;
+
   width: 10px;
   height: 10px;
+
   margin-left: 5px;
+
   font-size: 23px;
   line-height: 16px;
   text-decoration: none;
@@ -1073,8 +1078,8 @@ input[type="checkbox"]:checked + .filter_features::before {
 }
 
 .catalog_pages a:not(.active_page):active {
-  border-top: 2px solid #b5b5b5;
   padding-top: 8px;
+  border-top: 2px solid #b5b5b5;
   background-color: #d5d5d5;
 }
 
@@ -1087,7 +1092,6 @@ input[type="checkbox"]:checked + .filter_features::before {
   position: absolute;
   bottom: 250px;
   left: 50%;
-/*  transform: translateX(-50%);*/
   margin-left: -325px;
 
   width: 460px;
@@ -1147,7 +1151,9 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 .write_us_popup label {
   display: inline-block;
+
   margin-bottom: 18px;
+
   font-size: 16px;
   line-height: 18px;
 }
@@ -1163,17 +1169,19 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 .write_us_popup input,
 .write_us_popup textarea {
+  padding: 9px 15px;
+  margin-top: 7px;
+
   box-sizing: border-box;
+
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
   color: black;
+
   border: 2px solid #d7dcde;
   border-radius: 3px;
-  padding: 9px 15px;
-  margin-top: 7px;
-
 }
 
 .write_us_popup input:hover,
