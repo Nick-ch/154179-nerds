@@ -91,6 +91,7 @@ h3 {
   margin-left: 0.2em;
 */
 
+  vertical-align: baseline;
   font-weight: normal;
 /*  line-height: 1em;*/
   font-family: "symbols-nerds";
@@ -214,14 +215,13 @@ h3 {
   line-height: 18px;
 }
 
-.shopping_cart span {
+.shopping_cart a::before {
+  content: "\62";
   margin-right: 18px;
 
   font-size: 16px;
-  line-height: 8.56px;
   opacity: .3;
 }
-
 
 
 
@@ -261,7 +261,7 @@ h3 {
 }
 
 .slide_more_btn {
-  width: 240px;
+  min-width: 240px;
   margin-top: 12px;
 }
 
@@ -371,7 +371,7 @@ h3 {
 }
 
 .offer_btn_web {
-  width: 140px;
+  min-width: 140px;
 }
 
 .offer_btn_mobile {
@@ -420,6 +420,7 @@ h3 {
 
   margin-right: 30px;
 
+  vertical-align: top;
   font-size: 16px;
   line-height: 22px;
 }
@@ -453,6 +454,7 @@ h3 {
 
 .about_us_list {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
 }
 
@@ -543,7 +545,7 @@ h3 {
   position: relative;
   height: 415px;
 
-  background: no-repeat center url(../img/map.png);
+  background: no-repeat center url(../img/map.png) #e9e5dc;
   border-top: 1px solid white;
 }
 
@@ -574,7 +576,7 @@ h3 {
 .btn_write_to_us {
   box-sizing: border-box;
 
-  width: 100%;
+  min-width: 100%;
 
   margin-top: 10px;
   margin-bottom: 13px;
@@ -638,9 +640,14 @@ h3 {
   width: 560px;
 }
 
-.footer_social_slogan h1,
+.footer_social_slogan .slogan,
 .footer_social_slogan p {
   margin: 0;
+}
+
+.footer_social_slogan .slogan {
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .footer_social_slogan p {
@@ -782,6 +789,7 @@ h3 {
 
   font-size: 16px;
   line-height: 20px;
+  color: #283136;
 }
 
 .filters_form_section input {
@@ -828,6 +836,21 @@ input[type="checkbox"]:checked + .filter_features::before {
   color: #000;
   background: #f1f1f1;
 }
+
+.filters_form_section .filter_grid_type:hover::before,
+.filters_form_section .filter_features:hover::before {
+  color: #b5b5b5;
+}
+
+.filters_form_section label:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.filters_form_section input:disabled + label {
+  opacity: 0.4;
+}
+
 
 .btn_filter_show:hover {
   background: #e5e5e5;
@@ -978,6 +1001,7 @@ input[type="checkbox"]:checked + .filter_features::before {
 
   padding-right: 40px;
 
+  vertical-align: top;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
@@ -989,6 +1013,7 @@ input[type="checkbox"]:checked + .filter_features::before {
 
   margin-right: 45px;
 
+  vertical-align: top;
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
@@ -1019,14 +1044,21 @@ input[type="checkbox"]:checked + .filter_features::before {
 
   margin-left: 5px;
 
-  font-size: 23px;
+  vertical-align: top;
+  font-size: 12px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
   color: #c1c1c1;
 }
 
+.sorting_direction a:nth-child(1)::before {
+  content: "\25bc";
+}
 
+.sorting_direction a:nth-child(2)::before {
+  content: "\25b2";
+}
 
 .sorting_direction a:hover:not(.current_sort_direction) {
   color: #b5b5b5;
@@ -1157,6 +1189,7 @@ input[type="checkbox"]:checked + .filter_features::before {
 
   margin-bottom: 18px;
 
+  vertical-align: top;
   font-size: 16px;
   line-height: 18px;
 }
