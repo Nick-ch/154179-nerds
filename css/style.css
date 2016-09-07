@@ -218,7 +218,7 @@ h3 {
 
 .shopping_cart a::before {
   position: absolute;
-  bottom: 2px;
+  bottom: 0;
   left: 4px;
   content: "\62";
 
