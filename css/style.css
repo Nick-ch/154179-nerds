@@ -205,6 +205,7 @@ h3 {
 }
 
 .shopping_cart a {
+  position: relative;
   display: block;
   padding-top: 33px;
 
@@ -216,11 +217,18 @@ h3 {
 }
 
 .shopping_cart a::before {
+  position: absolute;
+  bottom: 2px;
+  left: 4px;
   content: "\62";
-  margin-right: 18px;
 
-  font-size: 16px;
+
+  font-family: "symbols-nerds";
+  text-transform: none;
+  font-size: 17px;
+  line-height: 18px;
   opacity: .3;
+
 }
 
 
@@ -541,6 +549,10 @@ h3 {
   margin-top: 85px;
 }
 
+.inner_footer {
+  margin-top: 80px;
+}
+
 .footer_map {
   position: relative;
   height: 415px;
@@ -595,6 +607,7 @@ h3 {
 }
 
 .footer_social_btns a {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
 
@@ -621,8 +634,45 @@ h3 {
   color: #fff;
 }
 
-.footer_social_btns span::before {
-  width: auto;
+.footer_social_btns .social_vk::before {
+  position: absolute;
+  left: 19px;
+  content: "\76";
+
+
+  font-family: "symbols-nerds";
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  line-height: 42px;
+}
+
+.footer_social_btns .social_fb::before {
+  position: absolute;
+  left: 25px;
+  content: "\66";
+
+
+  font-family: "symbols-nerds";
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  line-height: 42px;
+}
+
+.footer_social_btns .social_inst::before {
+  position: absolute;
+  left: 22px;
+  content: "📷";
+
+  font-family: "symbols-nerds";
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  line-height: 42px;
 }
 
 .footer_social_btns a:hover {
@@ -977,7 +1027,7 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 .sorting {
   margin-top: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 
   font-size: 0;
 }
@@ -1037,6 +1087,7 @@ input[type="checkbox"]:checked + .filter_features::before {
 }
 
 .sorting_direction a{
+  position: relative;
   display: inline-block;
 
   width: 10px;
@@ -1045,19 +1096,37 @@ input[type="checkbox"]:checked + .filter_features::before {
   margin-left: 5px;
 
   vertical-align: top;
+/*
   font-size: 12px;
   line-height: 16px;
+*/
   text-decoration: none;
   text-transform: uppercase;
   color: #c1c1c1;
 }
 
 .sorting_direction a:nth-child(1)::before {
+  position: absolute;
+  top: 0;
+  left: -3px;
   content: "\25bc";
+
+  font-family: "symbols-nerds";
+  text-transform: none;
+  font-size: 23px;
+  line-height: 20px;
 }
 
 .sorting_direction a:nth-child(2)::before {
+  position: absolute;
+  top: 0;
+  left: -1px;
   content: "\25b2";
+
+  font-family: "symbols-nerds";
+  text-transform: none;
+  font-size: 23px;
+  line-height: 20px;
 }
 
 .sorting_direction a:hover:not(.current_sort_direction) {
@@ -1124,10 +1193,11 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 
 .write_us_popup {
-  position: absolute;
-  bottom: 250px;
+  display: none;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  margin-left: -325px;
+  transform: translate(-50%,-50%);
 
   width: 460px;
   height: 316px;
