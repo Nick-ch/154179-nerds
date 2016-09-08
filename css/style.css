@@ -548,6 +548,7 @@ h3 {
 }
 
 .main_footer {
+  position: relative;
   margin-top: 85px;
 }
 
@@ -562,7 +563,6 @@ h3 {
   background: no-repeat center url(../img/map.png) #e9e5dc;
   background-size: cover;
   border-top: 1px solid white;
-  z-index: 1;
 }
 
 .footer_contacts {
