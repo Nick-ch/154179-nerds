@@ -360,6 +360,8 @@ h3 {
 
 .offer_col img{
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .offer_col h2 {
@@ -558,6 +560,7 @@ h3 {
   height: 415px;
 
   background: no-repeat center url(../img/map.png) #e9e5dc;
+  background-size: cover;
   border-top: 1px solid white;
 }
 
@@ -969,6 +972,8 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 .item_card img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .item_card:nth-child(2n) {
@@ -1210,6 +1215,10 @@ input[type="checkbox"]:checked + .filter_features::before {
 
 }
 
+.write_us_popup_show {
+  display: block;
+}
+
 .modal_content_close_btn {
   position: absolute;
   top: 6px;
@@ -1316,4 +1325,5 @@ input[type="checkbox"]:checked + .filter_features::before {
   width: 460px;
   margin-top: 25px;
   border: 0;
+  outline: none;
 }
