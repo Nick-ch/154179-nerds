@@ -562,6 +562,7 @@ h3 {
   background: no-repeat center url(../img/map.png) #e9e5dc;
   background-size: cover;
   border-top: 1px solid white;
+  z-index: 1;
 }
 
 .footer_contacts {
@@ -1217,13 +1218,13 @@ input[type="checkbox"]:checked + .filter_features::before {
 }
 
 @keyframes popup_open {
-  from { top: -2000px; }
+  from { top: -1000px; }
   to   { top: 50%;    }
 }
 
 .write_us_popup_show {
   display: block;
-  animation: popup_open 1s;
+  animation: popup_open 0.6s;
 }
 
 @keyframes popup_shake {
@@ -1233,7 +1234,7 @@ input[type="checkbox"]:checked + .filter_features::before {
 }
 
 .modal_error {
-  animation: popup_shake 1s;
+  animation: popup_shake 0.6s;
 }
 
 .modal_content_close_btn {
