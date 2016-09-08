@@ -553,6 +553,7 @@ h3 {
 }
 
 .inner_footer {
+  position: relative;
   margin-top: 80px;
 }
 
